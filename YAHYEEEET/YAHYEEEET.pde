@@ -5,24 +5,27 @@ void setup() {
     
     //background white
     background(0);
+    
 }
+
+int counter = 0;
+
 
 //runs repeatedly
 void draw() {
-  // radom offset
-  float x = random(0,1000);
-  float y = random(0,1000);
-  //random size
-  float size = random(0,25);
-  //draw ellipse
-  ellipse (x, y,size,size);
+  // random offset
+    float x = random(0,1000);
+    float y = random(0,1000);
+    //random size
+    float size = random(0,25);
+    //draw ellipse
+    ellipse (x, y,size,size);
     
-  
-  
-}
-
-void keyPressed() {
-    if (key == 's') {
+    counter += 1;
+    
+    if (counter > 100)
+    {
       saveFrame("output-####.png");
-    }
+      exit();
+    }      
 }
