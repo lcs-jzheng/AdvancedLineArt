@@ -25,10 +25,10 @@ void draw() {
     
     if (counter > 100)
     {
-      fill(204,102,0);
+      fill(255,255,153);
       ellipse (800,150,150,150);
       fill(0);
-      ellipse (850,125,150,150);
+      ellipse (825,125,150,150);
       
       saveFrame("output-####.png");
       exit();
