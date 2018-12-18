@@ -30,7 +30,46 @@ void draw() {
       fill(0);
       ellipse (825,125,150,150);
       
+      
+      
+      stroke(255,120,0);
+      drawMountain();
+      
+      
+      
+      
+      
       saveFrame("output-####.png");
       exit();
     }      
+}
+
+
+void drawMountain() {
+ 
+  
+  //random number for the incline and forward
+  
+  
+  
+  
+  beginShape();
+  vertex(0,850);
+  vertex(75,834);
+  vertex(165,900);
+  vertex(245,780);
+  vertex(305,821);
+  vertex(425,925);
+  vertex(565,855);
+  vertex(625,821);
+  vertex(655,821);
+  vertex(745,900);
+  vertex(834,818);
+  vertex(892,821);
+  vertex(965,786);
+  vertex(1000,800);
+  vertex(1000,1000);
+  vertex(0,1000);
+  endShape(CLOSE);
+  
 }
