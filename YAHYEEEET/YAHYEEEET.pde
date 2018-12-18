@@ -32,7 +32,7 @@ void draw() {
       
       
       
-      stroke(255,120,0);
+      stroke(0,100,15);
       drawMountain();
       
       
@@ -51,7 +51,7 @@ void drawMountain() {
   //random number for the incline and forward
   
   
-  
+   fill(0,100,0);
   
   beginShape();
   vertex(0,850);
